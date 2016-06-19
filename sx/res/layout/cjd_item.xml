@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="10dp"
+	android:padding="10dp"
+	android:background="@drawable/pop_listview_bg"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="答题时间: "
+			android:textColor="@color/white" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/shijian"
+			android:text="20分钟"
+			android:textColor="@color/white" />
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="总答题数: "
+			android:textColor="@color/white" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/zongshu"
+			android:text="10个"
+			android:textColor="@color/white" />
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="正确个数: "
+			android:textColor="@color/white" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/zhengqu"
+			android:text="4个"
+			android:textColor="@color/white" />
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="错误个数: "
+			android:textColor="@color/white" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/cuowu"
+			android:text="6个"
+			android:textColor="@color/white" />
+	</LinearLayout>
+</LinearLayout>

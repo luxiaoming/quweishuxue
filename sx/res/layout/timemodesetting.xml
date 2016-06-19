@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:orientation="vertical"
+	android:background="@drawable/bk_ground1"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_centerInParent="true">
+	<RelativeLayout
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:id="@+id/time_setting_level"
+		android:background="@drawable/second_menu_bg"
+		android:layout_width="fill_parent"
+		android:layout_height="65.0dip"
+		android:layout_marginLeft="20.0dip"
+		android:layout_marginTop="40.0dip"
+		android:layout_marginRight="20.0dip">
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:layout_marginLeft="8.0dip"
+			android:src="@drawable/img_level" />
+		<ImageView
+			android:id="@+id/img_time_star1"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:layout_marginRight="10.0dip"
+			android:src="@drawable/star"
+			android:layout_alignParentRight="true" />
+		<ImageView
+			android:id="@+id/img_time_star2"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:layout_marginRight="40.0dip"
+			android:src="@drawable/star"
+			android:visibility="gone"
+			android:layout_alignParentRight="true" />
+		<ImageView
+			android:id="@+id/img_time_star3"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:layout_marginRight="70.0dip"
+			android:src="@drawable/star"
+			android:visibility="gone"
+			android:layout_alignParentRight="true" />
+	</RelativeLayout>
+	<RelativeLayout
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:id="@+id/time_setting_time"
+		android:background="@drawable/second_menu_bg"
+		android:layout_width="fill_parent"
+		android:layout_height="65.0dip"
+		android:layout_marginLeft="20.0dip"
+		android:layout_marginTop="30.0dip"
+		android:layout_marginRight="20.0dip"
+		android:layout_below="@+id/time_setting_level">
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:layout_marginLeft="8.0dip"
+			android:src="@drawable/img_time" />
+		<ImageView
+			android:id="@+id/img_timing"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:layout_marginRight="10.0dip"
+			android:src="@drawable/time_20"
+			android:layout_alignParentRight="true" />
+	</RelativeLayout>
+	<TextView
+		android:textSize="25.0dip"
+		android:textColor="#ffffffff"
+		android:id="@+id/text_time_info"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20.0dip"
+		android:layout_marginTop="20.0dip"
+		android:layout_marginRight="20.0dip"
+		android:text="你当前选择的是：初级模式3分钟速算练习。"
+		android:shadowColor="#ff00ff00"
+		android:shadowDx="5.0"
+		android:visibility="invisible"
+		android:shadowRadius="1.5"
+		android:layout_below="@+id/time_setting_time" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="80.0dip"
+		android:layout_marginLeft="40.0dip"
+		android:layout_marginTop="30.0dip"
+		android:layout_marginRight="40.0dip"
+		android:layout_below="@+id/text_time_info">
+		<Button
+			android:id="@+id/timemode_confirm"
+			android:background="@drawable/start_answer"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_margin="10.0dip" />
+	</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:padding="8.0dip"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true">
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0">
+			<ImageView
+				android:id="@+id/img_sound_time"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="2.0dip"
+				android:src="@drawable/sound_on" />
+		</RelativeLayout>
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0">
+			<ImageView
+				android:id="@+id/img_exit_time"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="2.0dip"
+				android:src="@drawable/img_exit"
+				android:layout_alignParentRight="true" />
+		</RelativeLayout>
+	</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView
+	android:gravity="center"
+	android:id="@+id/gridview"
+	android:background="@drawable/bk_ground1"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:horizontalSpacing="10.0dip"
+	android:verticalSpacing="10.0dip"
+	android:stretchMode="columnWidth"
+	android:numColumns="4"
+	xmlns:android="http://schemas.android.com/apk/res/android" />

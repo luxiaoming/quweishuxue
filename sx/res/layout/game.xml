@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:id="@+id/layout_main"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/bk_ground1"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+		<LinearLayout
+			android:orientation="horizontal"
+			android:id="@+id/lin_info"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5.0dip"
+			android:layout_marginRight="3.0dip"
+			android:layout_weight="1.0">
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_weight="1.0">
+				<ImageView
+					android:gravity="center_vertical"
+					android:layout_width="wrap_content"
+					android:layout_height="20.0dip"
+					android:src="@drawable/game_level" />
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="wrap_content"
+					android:layout_height="30.0dip">
+					<ImageView
+						android:layout_gravity="center_vertical"
+						android:id="@+id/star1"
+						android:layout_width="wrap_content"
+						android:layout_height="20.0dip"
+						android:src="@drawable/star"
+						android:layout_weight="1.0" />
+					<ImageView
+						android:layout_gravity="center_vertical"
+						android:id="@+id/star2"
+						android:layout_width="wrap_content"
+						android:layout_height="20.0dip"
+						android:src="@drawable/star"
+						android:layout_weight="1.0" />
+					<ImageView
+						android:layout_gravity="center_vertical"
+						android:id="@+id/star3"
+						android:layout_width="wrap_content"
+						android:layout_height="20.0dip"
+						android:src="@drawable/star"
+						android:layout_weight="1.0" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:gravity="center_horizontal"
+				android:orientation="horizontal"
+				android:background="@drawable/game_bk2"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_weight="0.5">
+				<ImageView
+					android:layout_gravity="center_vertical"
+					android:id="@+id/img_correct"
+					android:layout_width="fill_parent"
+					android:layout_height="30.0dip"
+					android:layout_marginLeft="20.0dip"
+					android:src="@drawable/correct_count"
+					android:visibility="invisible"
+					android:layout_weight="1.0" />
+				<TextView
+					android:textSize="18.0dip"
+					android:textColor="@color/white"
+					android:gravity="center_vertical"
+					android:id="@+id/text_correct"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:layout_marginLeft="10.0dip"
+					android:text="0"
+					android:layout_weight="1.0" />
+				<ImageView
+					android:layout_gravity="center"
+					android:id="@+id/img_incorrect"
+					android:layout_width="fill_parent"
+					android:layout_height="30.0dip"
+					android:layout_marginLeft="5.0dip"
+					android:visibility="invisible"
+					android:src="@drawable/incorrect_count"
+					android:layout_weight="1.0" />
+				<TextView
+					android:textSize="18.0dip"
+					android:textColor="@color/white"
+					android:gravity="center_vertical"
+					android:id="@+id/text_incorrect"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:layout_marginLeft="8.0dip"
+					android:layout_marginRight="20.0dip"
+					android:text="0"
+					android:layout_weight="1.0" />
+			</LinearLayout>
+			<LinearLayout
+				android:gravity="center_horizontal"
+				android:orientation="vertical"
+				android:id="@+id/time_base"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_weight="1.0">
+				<ImageView
+					android:gravity="center_vertical"
+					android:id="@+id/text_time"
+					android:layout_width="wrap_content"
+					android:layout_height="20.0dip"
+					android:layout_marginLeft="2.0dip"
+					android:src="@drawable/left_time" />
+				<com.example.sx.view.CountdownView
+					app:timeTextColor="@color/white"
+					android:gravity="center_vertical"
+					android:id="@+id/remainTime"
+					android:layout_width="wrap_content"
+					android:layout_height="fill_parent"
+					android:text="00:00:01"
+					app:isShowHour="true"
+					app:suffixTextSize="14sp"
+					app:timeTextSize="14sp"
+					app:suffixTextColor="@color/white"
+					android:layout_weight="0.3" />
+				<TextView
+					android:textSize="22.0dip"
+					android:textColor="#ffff4500"
+					android:gravity="center_vertical"
+					android:id="@+id/leftnum"
+					android:visibility="gone"
+					android:layout_width="wrap_content"
+					android:layout_height="fill_parent"
+					android:text="25"
+					android:layout_weight="0.3" />
+			</LinearLayout>
+		</LinearLayout>
+	
+	
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_centerInParent="true"
+		android:layout_height="wrap_content">
+	
+		<LinearLayout
+			android:gravity="center"
+			android:orientation="horizontal"
+			android:background="@drawable/game_bk3"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_marginLeft="10.0dip"
+			android:layout_marginTop="60.0dip"
+			android:layout_marginRight="10.0dip"
+			android:layout_marginBottom="10.0dip"
+			android:layout_weight="1.0">
+			<TextView
+				android:textSize="38sp"
+				android:typeface="serif"
+				android:textStyle="bold"
+				android:textColor="@color/white"
+				android:gravity="center"
+				android:id="@+id/firstQueNo"
+				android:text="7"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			<TextView
+				android:gravity="center"
+				android:id="@+id/operation"
+				android:text=""
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="3.0dip"
+				android:layout_marginRight="3.0dip" />
+			<TextView
+				android:textSize="38sp"
+				android:typeface="serif"
+				android:textStyle="bold"
+				android:gravity="center"
+				android:id="@+id/secondQueNo"
+				android:text="7"
+				android:textColor="@color/white"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			<TextView
+				android:id="@+id/equal"
+				android:background="@drawable/equal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5.0dip" />
+			<TextView
+				android:textSize="38sp"
+				android:typeface="serif"
+				android:textStyle="bold"
+				android:textColor="@color/white"
+				android:gravity="center"
+				android:id="@+id/result"
+				android:background="@drawable/u_question_mark"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5.0dip" />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_gravity="right"
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:layout_marginLeft="10.0dip"
+			android:layout_marginTop="5.0dip"
+			android:layout_marginRight="10.0dip"
+			android:layout_marginBottom="5.0dip"
+			android:layout_weight="1.0">
+			<Button
+				android:id="@+id/nextIcon"
+				android:background="@drawable/btn_game_next"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_marginTop="10.0dip"
+			android:layout_marginBottom="60.0dip"
+			android:layout_weight="1.0">
+			<Button
+				android:textSize="25.0dip"
+				android:textColor="#ffffffff"
+				android:id="@+id/ans1"
+				android:background="@drawable/answer_botton"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_marginLeft="15.0dip"
+				android:layout_weight="1.0" />
+			<Button
+				android:textSize="25.0dip"
+				android:textColor="#ffffffff"
+				android:id="@+id/ans2"
+				android:background="@drawable/answer_botton"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_marginLeft="10.0dip"
+				android:layout_weight="1.0" />
+			<Button
+				android:textSize="25.0dip"
+				android:textColor="#ffffffff"
+				android:id="@+id/ans3"
+				android:background="@drawable/answer_botton"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_marginLeft="10.0dip"
+				android:layout_weight="1.0" />
+			<Button
+				android:textSize="25.0dip"
+				android:textColor="#ffffffff"
+				android:id="@+id/ans4"
+				android:background="@drawable/answer_botton"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_marginLeft="10.0dip"
+				android:layout_marginRight="10.0dip"
+				android:layout_weight="1.0" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:padding="2.0dip"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true">
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1.0">
+			<ImageView
+				android:id="@+id/img_game_sound"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="2.0dip"
+				android:src="@drawable/sound_on" />
+			<ImageView
+				android:id="@+id/img_game_help"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="70.0dip"
+				android:src="@drawable/help"
+				android:layout_alignParentLeft="true" />
+		</RelativeLayout>
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1.0">
+			<ImageView
+				android:id="@+id/img_game_exit"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="2.0dip"
+				android:src="@drawable/img_exit"
+				android:layout_alignParentRight="true" />
+		</RelativeLayout>
+	</LinearLayout>
+</RelativeLayout>
